@@ -1,0 +1,41 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <title>GoGraph</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/file.css" />
+
+    <script src="js/cytoscape.min.js"></script>
+
+    <!--polyfills are needed for this extension for old browsers like IE -->
+    <script src="js/shim.min.js"></script>
+
+    <script src="js/layout-base.js"></script>
+    <script src="js/avsdf-base.js"></script>
+
+    <script src="js/cytoscape-avsdf.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div>
+        <form name="options">
+            <input id="addNodo" type="button" value="+Nodo" />
+            <input id="addArista" type="button" value="+Arista" />
+            <input id="delete" type="button" value="Borrar" />
+            <input id="sort" type="button" value="Organizar" />
+            <input id="png" type="button" value="PNG" />
+            <input id="save" type="button" value="Guardar" />
+            <label for="openBtn" class="btn">Abrir</label>
+            <input name="open" id="openBtn" type="file" class="custom-file-input">
+        </form>
+    </div>
+    <div id="cy"></div>
+</body>
+
+</html>
