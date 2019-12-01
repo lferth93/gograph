@@ -1,0 +1,2 @@
+# gograph
+gograph es una aplicación web estatica para edicion y vizualización de grafos no dirigidos. gograph usa el framework [cytoscape.js](https://js.cytoscape.org) y el layout [AVSDF](https://github.com/iVis-at-Bilkent/cytoscape.js-avsdf) para la visualización.
